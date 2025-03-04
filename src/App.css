@@ -1,0 +1,111 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(226, 233, 238);
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: rgb(199, 225, 238);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  cursor: pointer;
+  height: 100px;
+  margin-left: 30px;
+}
+
+/* Navigation Buttons Container */
+.nav-buttons-container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Navigation Button */
+.nav-button {
+  background-color: #89cff0;
+  color: white;
+  border: 2px solid rgb(96, 181, 214);
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: rgb(72, 161, 196);
+  color: #fff;
+}
+
+header {
+  display: flex; /* إضافة خاصية flex لعرض العناصر بجانب بعضها */
+  align-items: center; /* محاذاة الفيديو والنص عموديًا في المنتصف */
+  justify-content: space-between; /* توزيع المساحة بين الفيديو والنص */
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+/* الفيديو */
+.side-video {
+  flex: 0 0 40%; /* عرض الفيديو 40% من الصفحة */
+  max-width: 500px; /* الحد الأقصى لعرض الفيديو */
+}
+
+/* النص */
+.overlay {
+  flex: 1; /* النص يأخذ المساحة المتبقية */
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  color: rgb(116, 204, 255);
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  color: rgb(116, 204, 255);
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 40px;
+  color: rgb(116, 204, 255);
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  color: rgb(49, 172, 186);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+i,
+p,
+a,
+span {
+  font-weight: 400;
+}
