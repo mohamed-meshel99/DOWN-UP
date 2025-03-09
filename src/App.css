@@ -1,6 +1,8 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: rgb(226, 233, 238);
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Bar */
@@ -14,19 +16,21 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 /* Logo */
 .logo {
   cursor: pointer;
-  height: 100px;
-  margin-left: 30px;
+  height: 80px;
+  margin-left: 20px;
 }
 
 /* Navigation Buttons Container */
 .nav-buttons-container {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 /* Navigation Button */
@@ -34,8 +38,8 @@ body {
   background-color: #89cff0;
   color: white;
   border: 2px solid rgb(96, 181, 214);
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 8px 12px;
+  font-size: 14px;
   cursor: pointer;
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -46,66 +50,85 @@ body {
   color: #fff;
 }
 
+/* Header Section */
 header {
-  display: flex; /* إضافة خاصية flex لعرض العناصر بجانب بعضها */
-  align-items: center; /* محاذاة الفيديو والنص عموديًا في المنتصف */
-  justify-content: space-between; /* توزيع المساحة بين الفيديو والنص */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   position: relative;
   overflow: hidden;
   margin-top: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-/* الفيديو */
+/* Video */
 .side-video {
-  flex: 0 0 40%; /* عرض الفيديو 40% من الصفحة */
-  max-width: 500px; /* الحد الأقصى لعرض الفيديو */
+  flex: 0 0 40%;
+  max-width: 500px;
+  width: 100%;
 }
 
-/* النص */
+/* Text Content */
 .overlay {
-  flex: 1; /* النص يأخذ المساحة المتبقية */
+  flex: 1;
   text-align: left;
+  padding: 20px;
 }
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 90px;
+  font-size: 5vw;
   color: rgb(116, 204, 255);
 }
 
 h2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-size: 4vw;
   color: rgb(116, 204, 255);
 }
 
 h3 {
   font-family: 'Dancing Script', cursive;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: rgb(116, 204, 255);
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 p {
   font-family: 'Dancing Script', cursive;
-  font-size: 25px;
+  font-size: 1.5vw;
   color: rgb(49, 172, 186);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-}
-
-i,
-p,
-a,
-span {
-  font-weight: 400;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-buttons-container {
+    justify-content: center;
+  }
+  .logo {
+    height: 60px;
+    margin-left: 0;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .side-video {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  h1, h2, h3 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 3vw;
+  }
 }
