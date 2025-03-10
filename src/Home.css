@@ -1,4 +1,9 @@
-  .container {
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(226, 233, 238);
+}
+
+.container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
