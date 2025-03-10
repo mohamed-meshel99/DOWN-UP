@@ -6,15 +6,15 @@ function HomePage() {
     <div className="container">
       {/* Header Section */}
       <header className="home-page">
-        <video className="side-video" disablePictureInPicture autoPlay muted loop>
+        {/* <video className="side-video" disablePictureInPicture autoPlay muted loop>
           <source src="homesvg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
         <div className="text-content">
           <h1>DOWN UP</h1>
           <h3>World of Entertainment and Fun Learning</h3>
         </div>
-      </header>
+      </header> 
 
       {/* Shamshoon Section */}
       <section className="section">
@@ -30,7 +30,7 @@ function HomePage() {
 
       {/* Owl Section */}
       <section className="section">
-        <video className="responsive-video" disablePictureInPicture autoPlay muted loop>
+        <video className="responsive-video owl" disablePictureInPicture autoPlay muted loop>
           <source src="owl.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
