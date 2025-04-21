@@ -1,0 +1,134 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color:white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: rgb(199, 225, 238);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+  cursor: pointer;
+  height: 80px;
+  margin-left: 20px;
+}
+
+/* Navigation Buttons Container */
+.nav-buttons-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Navigation Button */
+.nav-button {
+  background-color: #89cff0;
+  color: white;
+  border: 2px solid rgb(96, 181, 214);
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: rgb(72, 161, 196);
+  color: #fff;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Video */
+.side-video {
+  flex: 0 0 40%;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Text Content */
+.overlay {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+  color: rgb(116, 204, 255);
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4vw;
+  color: rgb(116, 204, 255);
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 20px;
+  color: rgb(116, 204, 255);
+  font-size: 2vw;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5vw;
+  color: rgb(49, 172, 186);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-buttons-container {
+    justify-content: center;
+  }
+  .logo {
+    height: 60px;
+    margin-left: 0;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .side-video {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  h1, h2, h3 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+}
