@@ -300,7 +300,11 @@ function Tree() {
               disabled={waitingDisabled} // تعطيل الزر بعد الضغط عليه
             >
               😔 أفضل الانتظار قليلاً
-            </button>
+            </button> 
+
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSezf_Hk7ce8NLo876j2p7K61DUNyDeCp4sedh2qbtC-pqtYqQ/viewform?usp=header"> <button className="button-50">
+              اكتشف خدمة شجرتنا
+            </button> </a>
           </div>
         </div>
       )}
